@@ -3,6 +3,12 @@
 	[
 		{
 			"path": "."
+		},
+		{
+			"path": "D:\\100. Workspace\\NodeSpace\\redux-examples\\redux\\examples\\counter"
+		},
+		{
+			"path": "D:\\100. Workspace\\NodeSpace\\redux-examples\\redux\\examples\\real-world"
 		}
 	]
 }

@@ -1,1 +1,437 @@
-{}
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"act_De",
+				"act_doDecre"
+			],
+			[
+				"background-c",
+				"background-color"
+			],
+			[
+				"http",
+				"http.createServer(requestListener);"
+			],
+			[
+				"createS",
+				"http.createServer(requestListener);"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "import React from 'react'\nimport ReactDOM from 'react-dom'\nimport { createStore } from 'redux'\n\n\nconst todo = ( state = 0, action ) =>{\n\n\tswitch(action.type) {\n\t\tcase 'I':\n\t\t\treturn state + 1;\n\t\tcase 'D':\n\t\t\treturn state - 1;\n\t\tdefault:\n\t\t\treturn state;\n\t}\n\n}\n\nexport const Todo = ( { value } ) => (\n\t<div>\n\t\t<h1 > {value} </h1>\n\t\t<button onClick = {act_doIncre} > + </button>\n\t\t<button onClick = {act_doDecre} > - </button>\n\t</div>\n);\n\nconst act_doIncre = () => {\n\tstore.dispatch( { type: 'I' } );\n}\n\nconst act_doDecre = () => {\n\tstore.dispatch( { type: 'D' } );\n}\n\n\nconst store = createStore(todo);\n\n\n\nconst render = () => {\n\tReactDOM.render(\n\t\t<Todo \n\t\t\tvalue = {store.getState()}\n\t\t\t/>,\n\t\tdocument.getElementById('root')\n\t);\n}\n\n\n\n\nrender();\nstore.subscribe(render);\n\n\n\n",
+			"file": "index.js",
+			"file_size": 822,
+			"file_write_time": 131208211898073889,
+			"settings":
+			{
+				"buffer_size": 773,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/100. Workspace/NodeSpace/redux-examples/redux/examples/todomvc/src/containers/App.js",
+			"settings":
+			{
+				"buffer_size": 738,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/100. Workspace/NodeSpace/redux-examples/redux/examples/todomvc/src/index.js",
+			"settings":
+			{
+				"buffer_size": 374,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "containers/myapp.js",
+			"settings":
+			{
+				"buffer_size": 0,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 173.0,
+		"last_filter": "git: commit",
+		"selected_items":
+		[
+			[
+				"git: commit",
+				"Git: Commit"
+			],
+			[
+				"git: add",
+				"Git: Add All"
+			],
+			[
+				"git: co",
+				"Git: Quick Commit (repo)"
+			],
+			[
+				"git: c",
+				"Git: Commit"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"npm install",
+				"Nodejs::NPM::Install"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: Install Package",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: Install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 432.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/100. Workspace/NodeSpace/myapp",
+		"/D/100. Workspace/NodeSpace/myapp/actions",
+		"/D/100. Workspace/NodeSpace/myapp/components",
+		"/D/100. Workspace/NodeSpace/myapp/containers"
+	],
+	"file_history":
+	[
+		"/D/100. Workspace/NodeSpace/redux-examples/redux/examples/todomvc/src/components/MainSection.js",
+		"/D/100. Workspace/NodeSpace/redux-examples/redux/examples/todomvc/src/components/TodoItem.js",
+		"/D/100. Workspace/NodeSpace/redux-examples/redux/examples/todomvc/src/actions/index.js",
+		"/D/100. Workspace/NodeSpace/redux-examples/redux/examples/todomvc/src/reducers/index.js",
+		"/D/100. Workspace/NodeSpace/redux-examples/redux/examples/todomvc/src/reducers/todos.js",
+		"/D/100. Workspace/NodeSpace/redux-examples/redux/examples/todomvc/src/containers/App.js",
+		"/D/100. Workspace/NodeSpace/redux-examples/redux/examples/todomvc/src/constants/TodoFilters.js",
+		"/D/100. Workspace/NodeSpace/redux-examples/redux/examples/todomvc/src/components/TodoTextInput.js",
+		"/D/100. Workspace/NodeSpace/myapp/index.js",
+		"/D/100. Workspace/NodeSpace/redux-examples/redux/examples/counter/src/components/Counter.js",
+		"/D/100. Workspace/NodeSpace/myapp/build/bundle.js",
+		"/D/100. Workspace/NodeSpace/myapp/views/index.html",
+		"/C/Users/lixiao/Downloads/react-devtools-master/react-devtools-master/README.md",
+		"/C/Users/lixiao/Downloads/react-devtools-master/react-devtools-master/package.json",
+		"/D/100. Workspace/NodeSpace/myapp/package.json",
+		"/C/Users/lixiao/Desktop/react-15.3.2/examples/basic-jsx-harmony/index.html",
+		"/C/Users/lixiao/Desktop/react-15.3.2/examples/basic-click-counter/index.html",
+		"/C/Users/lixiao/Desktop/react-15.3.2/examples/basic-commonjs/index.js",
+		"/C/Users/lixiao/Desktop/react-15.3.2/examples/basic-commonjs/index.html",
+		"/C/Users/lixiao/Desktop/react-15.3.2/examples/basic-commonjs/.babelrc",
+		"/D/100. Workspace/NodeSpace/myapp/app.js",
+		"/D/100. Workspace/NodeSpace/myapp/webpack.config.js",
+		"/D/100. Workspace/NodeSpace/redux-examples/redux/examples/counter/src/index.js",
+		"/D/100. Workspace/NodeSpace/redux-examples/redux/examples/counter/public/index.html",
+		"/D/100. Workspace/NodeSpace/myapp/views/error.html",
+		"/D/100. Workspace/NodeSpace/myapp/.gitignore",
+		"/C/Users/lixiao/Desktop/test.js",
+		"/D/100. Workspace/NodeSpace/redux-examples/redux/examples/counter-vanilla/index.html",
+		"/D/100. Workspace/NodeSpace/adminonrest/test-admin/src/App.js",
+		"/D/100. Workspace/NodeSpace/myapp/routes/testRouter.js",
+		"/C/Users/lixiao/AppData/Roaming/Sublime Text 3/Packages/User/Babel.sublime-settings",
+		"/D/100. Workspace/NodeSpace/myapp/routes/index.js",
+		"/D/100. Workspace/NodeSpace/myapp/public/stylesheets/style.css",
+		"/D/100. Workspace/NodeSpace/myapp/public/javascripts/test.js",
+		"/D/100. Workspace/NodeSpace/myapp/bin/www",
+		"/C/Users/lixiao/AppData/Roaming/Sublime Text 3/Packages/Babel/Babel.sublime-settings",
+		"/D/00. Tools/GnuWin32/bin/www.absit.com.cn/index.html",
+		"/D/00. Tools/GnuWin32/bin/www.absit.com.cn/zh-hans.1",
+		"/D/100. Workspace/NodeSpace/myapp/public/bundle.js",
+		"/D/100. Workspace/NodeSpace/myapp/bundle.js",
+		"/D/100. Workspace/NodeSpace/newApp/bin/www",
+		"/D/100. Workspace/NodeSpace/newApp/app.js",
+		"/D/100. Workspace/NodeSpace/newApp/package.json",
+		"/D/100. Workspace/NodeSpace/newApp/package.sublime-project",
+		"/C/Users/lixiao/AppData/Roaming/Sublime Text 3/Packages/Nodejs/Nodejs.sublime-build",
+		"/C/Users/lixiao/AppData/Roaming/Sublime Text 3/Packages/User/Nodejs.sublime-settings",
+		"/C/Users/lixiao/AppData/Roaming/Sublime Text 3/Packages/Nodejs/Nodejs.sublime-settings",
+		"/C/Users/lixiao/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/lixiao/AppData/Roaming/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/C/Users/lixiao/AppData/Roaming/Sublime Text 3/Packages/Package Control.sublime-package"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"yellow",
+			"basedir"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 773,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								702,
+								716
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 360.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/D/100. Workspace/NodeSpace/redux-examples/redux/examples/todomvc/src/containers/App.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 738,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/D/100. Workspace/NodeSpace/redux-examples/redux/examples/todomvc/src/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 374,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								373,
+								373
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "containers/myapp.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Nodejs/Nodejs.sublime-build",
+	"project": "package.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 235.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
