@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react'
+import * as TodoActions from '../actions/action'
 
 const GITHUB_REPO = 'https://github.com/reactjs/redux'
 
@@ -27,8 +28,9 @@ class Todo extends Component {
 	}
 
 	act_doDecre1(){
+		console.log(this.props.store);
+		this.props.store.dispatch({type: 'D'});
 
-		this.props.actions.buttonClick();
 	}
 
 	render() {

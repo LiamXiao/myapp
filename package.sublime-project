@@ -5,10 +5,13 @@
 			"path": "."
 		},
 		{
-			"path": "D:\\100. Workspace\\NodeSpace\\redux-examples\\redux\\examples\\counter"
+			"path": "E:\\Work\\99.workspace\\nodespace\\examples\\redux\\examples\\todos"
 		},
 		{
-			"path": "D:\\100. Workspace\\NodeSpace\\redux-examples\\redux\\examples\\real-world"
+			"path": "E:\\Work\\99.workspace\\nodespace\\examples\\redux\\examples\\todomvc"
+		},
+		{
+			"path": "E:\\Work\\99.workspace\\nodespace\\examples\\redux\\examples\\counter"
 		}
 	]
 }
